@@ -1,4 +1,4 @@
-#Solitude - An iOS Animotion
+##Solitude - An iOS Animation using RubyMotion
 
 * This is v0.1 .
 * The code is still quite __shitty__, be careful.
