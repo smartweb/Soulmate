@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project'
+require 'routable'
+require 'rubygems'
+require 'motion-cocoapods'
+require 'bubble-wrap'
+require 'sugarcube'
+require 'Animotion'
+
+Motion::Project::App.setup do |app|
+  # Project Settings
+  app.name                              = 'Solitude'    # TODO: emoji in app.name
+  app.device_family                     = :ipad
+  app.interface_orientations            = [:landscape_left, :landscape_right]
+  app.info_plist['UIStatusBarHidden']   = true
+
+  app.frameworks += ['AudioToolbox',
+                     'AVFoundation',
+                     'CoreGraphics',
+                     'QuartzCore']
+end
